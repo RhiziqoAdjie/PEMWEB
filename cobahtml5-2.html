@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Belajar HTML 5</title>
+        <script type="Text/JavaScript">
+        function draw() 
+        {
+            var canvas = document.getElementById("Belajar");
+            if (canvas.getContext)
+            {
+                var ctx = document.getContext("2d"); // Gambar Bujur Sangkar Pertama
+                ctx.fillstyle = "rgb(40,0,0"; // Parameter Warna
+                ctx.fillrect(90,20,60,60); // Parameter Titik Koordinat
+            }
+        }
+        </script>
+        <style type="text/css">
+            canvas {
+                border: 3px solid red;
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body onload="draw();">
+    <canvas id="Belajar" width="300" height="300"></canvas>
+    </body>
+</html>
